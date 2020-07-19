@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言管理</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="__STATIC__/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/vendor/bootstrap/css/bootstrapValidator.css">
+    <link rel="stylesheet" href="__STATIC__/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__STATIC__/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="__STATIC__/vendor/chartist/css/chartist-custom.css">
+
+    <!-- VENDOR JS -->
+    <script type="text/javascript" src="__STATIC__/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/vendor/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="__STATIC__/vendor/bootstrap/js/bootstrapValidator.js"></script>
+    <script src="__STATIC__/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="__STATIC__/scripts/klorofil-common.js"></script>
+    <script src="__STATIC__/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="__STATIC__/vendor/chartist/js/chartist.min.js"></script>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="__STATIC__/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="__STATIC__/css/demo.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+</head>
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-btn">
+            <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+        </div>
+        <h2 class="col-lg-3">留言管理</h2>
+    </nav>
+    <!-- END NAVBAR -->
+
+
+
+
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+        <div class="sidebar-scroll">
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <a href="#users" data-toggle="collapse" aria-expanded="false" class="collapsed">
+                            <i class="lnr lnr-user"></i>
+                            <span>用户管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="users" class="collapse">
+                            <ul class="nav">
+                                <li>
+                                    <a href=""><span>修改密码</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#message" data-toggle="collapse" aria-expanded="false" class="collapsed">
+                            <i class="lnr lnr-database"></i>
+                            <span>留言管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="message" class="collapse">
+                            <ul class="nav">
+                                <li>
+                                    <a href=""><span>留言信息</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href=""><i class="glyphicon glyphicon-log-out"></i> 安全退出</a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- END LEFT SIDEBAR -->
+
+
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                {__CONTENT__}
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+
+
+    <div class="clearfix"></div>
+</div>
+<!-- END WRAPPER -->
+
+
+</body>
+</html>
