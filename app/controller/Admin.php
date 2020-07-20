@@ -10,7 +10,9 @@ namespace app\controller;
 
 
 use app\model\Book;
+use app\model\User;
 use think\facade\View;
+use think\model\concern\TimeStamp;
 
 class Admin extends \app\BaseController
 {
@@ -23,11 +25,30 @@ class Admin extends \app\BaseController
     public function show()
     {
         $list = Book::order('id', 'desc')->select();
-        foreach($list as $key=>$book){
-            echo $book->name. ' - ' . $book->tel . '<br>';
-        }
 
         View::assign('list', $list);
         return View::fetch('show');
     }
+
+    public function modify()
+    {
+        return View::fetch();
+    }
+
+
+    public function AdminModify()
+    {
+        $data['name'] = 'admin';
+        $data['password'] = $_POST['password'];
+        $data['update_time'] = time();
+
+//        var_dump($data);
+
+        $user = User::where('name', 'admin')->find();
+//        var_dump($user);
+
+
+        return View::fetch();
+    }
+
 }
