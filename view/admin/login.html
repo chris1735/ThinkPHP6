@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="fullscreen-bg">
+
+<head>
+	<meta charset="UTF-8">
+	<title>留言管理</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="__STATIC__/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__STATIC__/vendor/bootstrap/css/bootstrapValidator.css">
+	<link rel="stylesheet" href="__STATIC__/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="__STATIC__/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="__STATIC__/vendor/chartist/css/chartist-custom.css">
+
+	<!-- VENDOR JS -->
+	<script type="text/javascript" src="__STATIC__/vendor/jquery/jquery.js"></script>
+	<script type="text/javascript" src="__STATIC__/vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="__STATIC__/vendor/bootstrap/js/bootstrapValidator.js"></script>
+	<script src="__STATIC__/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="__STATIC__/scripts/klorofil-common.js"></script>
+	<script src="__STATIC__/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+	<script src="__STATIC__/vendor/chartist/js/chartist.min.js"></script>
+
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="__STATIC__/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="__STATIC__/css/demo.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<div class="vertical-align-wrap">
+			<div class="vertical-align-middle">
+				<div class="auth-box ">
+					<div class="left">
+						<div class="content">
+							<div class="header">
+								<h3>用户登录</h3>
+							</div>
+							<form class="form-auth-small" action="/Admin/loginVerify" method="post" accept-charset="UTF-8">
+								<div class="form-group">
+									<label for="userName" class="control-label sr-only">userName</label>
+									<input type="text" class="form-control" id="userName" name="userName" value="" placeholder="用户名">
+								</div>
+								<div class="form-group">
+									<label for="userPassword" class="control-label sr-only">Password</label>
+									<input type="password" class="form-control" id="userPassword" name="userPassword" value="" placeholder="密码">
+								</div>
+								<div class="form-group clearfix">
+									<label class="fancy-checkbox element-left">
+										<input type="checkbox" name="remember[]" value="true">
+										<span>记住我，60天内免登陆</span>
+									</label>
+								</div>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">登录</button>
+								<div class="bottom pull-left">
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="right">
+<!--						<img src="assets/img/logo1.png">-->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END WRAPPER -->
+</body>
+
+</html>
