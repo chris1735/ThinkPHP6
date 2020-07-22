@@ -12,4 +12,9 @@ class Index extends BaseController
         return '';
     }
 
+    public function hello($name)
+    {
+        return $name;
+    }
+
 }

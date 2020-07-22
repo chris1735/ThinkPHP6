@@ -39,15 +39,17 @@ class Admin extends \app\BaseController
     {
         if(!Session::has('user')) return redirect('/Admin/login');
 
-        $data['name'] = 'admin';
-        $data['password'] = $_POST['password'];
-        $data['update_time'] = time();
+        $user = User::where('name', Request::post('name'))->findOrEmpty();
 
-        $user = User::where('name', 'admin')->find();
-        $user->password = MD5($data['password']);
-        $user->update_time = $data['update_time'];
+        if ($user->isEmpty()) {
+            View::assign('msg', '没有此用户');
+            return View::fetch();
+        }
+
+        $user->password = MD5(Request::post('password'));
         $user->save();
 
+        View::assign('msg', '修改成功');
         return View::fetch();
     }
 
